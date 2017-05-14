@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wangwei.android_releativelayout.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <!--相对布局 空间必须有ID，通过ID来识别和确认空间位置-->
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="button"/>
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="button2"
+            android:textSize="16dp"
+            android:layout_toRightOf="@+id/button1"
+            android:layout_below="@+id/button1"/>
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="button2"
+            android:textSize="16dp"
+            android:layout_toLeftOf="@+id/button2"
+            android:layout_below="@+id/button2"/>
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="button4"
+            android:layout_toRightOf="@+id/button2"
+            android:layout_above="@+id/button2"
+            android:textSize="16dp"/>
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="button5"
+            android:layout_toRightOf="@+id/button2"
+            android:layout_below="@+id/button2"
+            android:textSize="16dp"/>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
